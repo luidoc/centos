@@ -1,9 +1,9 @@
 FROM quay.io/centos/centos:stream8
-RUN yum update -y && \
-yum install -y wget && \
-#RUN yum -y install leptonica tesseract && \
-yum install -y java-11-openjdk && \
-yum clean all
+RUN dnf update -y && \
+dnf install -y wget && \
+dnf -y install leptonica tesseract && \
+dnf install -y java-11-openjdk && \
+dnf clean all
 
 # Define working directory.
 WORKDIR /tmp
