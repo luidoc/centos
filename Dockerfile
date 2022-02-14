@@ -1,7 +1,7 @@
 FROM quay.io/centos/centos:stream8
 RUN yum update -y && \
 yum install -y wget && \
-RUN yum -y install leptonica tesseract && \
+#RUN yum -y install leptonica tesseract && \
 yum install -y java-11-openjdk && \
 yum clean all
 
