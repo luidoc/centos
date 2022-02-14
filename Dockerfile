@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM quay.io/centos/centos:stream8
 RUN yum update -y && \
 yum install -y wget && \
 RUN yum -y install leptonica tesseract && \
