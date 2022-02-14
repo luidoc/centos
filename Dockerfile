@@ -9,4 +9,4 @@ yum clean all
 WORKDIR /tmp
 
 # Define default command.
-CMD ["bash"]
+CMD ["/bin/sleep", "3650d"]
